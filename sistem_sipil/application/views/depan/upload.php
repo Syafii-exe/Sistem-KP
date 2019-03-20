@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dokumentasi</title>
+    <title>Download/Upload</title>
     <link rel="shorcut icon" href="<?php echo base_url().'assets/baru/logo.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
@@ -22,9 +22,10 @@
     <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
 </head>
 
+
 <body>
   <!--============================= HEADER =============================-->
- 
+  
   <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
       <div class="container nav-menu2">
           <div class="row">
@@ -33,30 +34,33 @@
                       <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                           <span class="icon-menu"></span>
                       </button>
-                     
+                      <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'assets/baru/logo.png'?>"></a>
                       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                           <ul class="navbar-nav">
                           <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
                               </li>
                               <li class="nav-item">
+                                  <a class="nav-link" href="<?php echo site_url('guru');?>">Dosen Pembimbing</a>
+                              </li>
+                              <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('siswa');?>">Mahasiswa</a>
                               </li>
                             
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('dosen/pengumuman');?>">Pengumuman</a>
+                                  <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('dosen/agenda');?>">Agenda</a>
+                                  <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('dosen/download');?>">Download/Upload</a>
+                                  <a class="nav-link" href="<?php echo site_url('download');?>">Download/Upload</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('dosen/galeri');?>">Dokumentasi</a>
+                                  <a class="nav-link" href="<?php echo site_url('galeri');?>">Dokumentasi</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="<?php echo site_url('dosen/contact');?>">Login</a>
+                                <a class="nav-link" href="<?php echo site_url('contact');?>">Login</a>
                               </li>
                         </ul>
                   </div>
@@ -68,35 +72,51 @@
     <section>
 </section>
 <!--//END HEADER -->
-  <!--============================= Gallery =============================-->
-  <div class="gallery-wrap">
+<section class="contact" style="margin-bottom:50px;">
     <div class="container">
-<!-- Style 2 -->
-<div class="row">
-  <div class="col-md-12">
-    <h3 class="gallery-style">Gallery Photo</h3>
-  </div>
-</div><br>
-<div class="row">
-  <div class="col-md-12">
-    <div id="gallery">
-      <div id="gallery-content">
-        <div id="gallery-content-center">
-          <?php foreach ($all_galeri->result() as $row) : ?>
-            <a href="<?php echo base_url().'assets/images/'.$row->galeri_gambar;?>" class="image-link2">
-             <img src="<?php echo base_url().'assets/images/'.$row->galeri_gambar;?>" class="all img-fluid" alt="#" />
-            </a>
-          <?php endforeach;?>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-<!--//End Style 2 -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-title">
+                    <h2>Upload</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-striped" id="display">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Files</th>
+                      <th>Tanggal</th>
+                      <th>Oleh</th>
+                      <th style="text-align:right;">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                      $no=1;
+                      foreach ($data->result() as $row):
+                    ?>
+                    <tr>
+                      <td><?php echo $no++;?></td>
+                      <td><?php echo $row->file_judul;?></td>
+                      <td><?php echo $row->tanggal;?></td>
+                      <td><?php echo $row->file_oleh;?></td>
+                      <td style="text-align:right;"><a href="<?php echo site_url('download/get_file/'.$row->file_id);?>" class="btn btn-info">Download</a></td>
+                    </tr>
+                  <?php endforeach;?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--//END  ABOUT IMAGE -->
 
-</div>
-</div>
- <!--//END  ABOUT IMAGE -->
+     <!--//END  ABOUT IMAGE -->
     <!--============================= FOOTER =============================-->
     <footer>
         <div class="container">
@@ -123,6 +143,7 @@
                       <div class="sitemap">
                           <h3>Akademik</h3>
                           <ul>
+                              <li><a href="<?php echo site_url('guru');?>">Dosen Pembimbing</a></li>
                               <li><a href="<?php echo site_url('siswa');?>">Mahasiswa </a></li>
                               <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
                               <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>

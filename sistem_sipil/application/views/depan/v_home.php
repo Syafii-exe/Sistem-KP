@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sistem Kerja Praktek Teknik Sipil</title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/'?>">
+    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
     <!-- Google Fonts -->
@@ -39,8 +39,6 @@
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                             <span class="icon-menu"></span>
                         </button>
-                        <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'assets/baru/logo.png'?>"></a>
-                      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">

@@ -57,6 +57,9 @@
                               <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('galeri');?>">Dokumentasi</a>
                               </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="<?php echo site_url('contact');?>">Login</a>
+                              </li>
                         </ul>
                   </div>
                 </nav>
