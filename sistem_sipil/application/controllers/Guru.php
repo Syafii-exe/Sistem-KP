@@ -1,21 +1,21 @@
 <?php
-class Pengumuman extends CI_Controller{
+class Guru extends CI_Controller{
 	function __construct(){
 		parent::__construct();
-		$this->load->model('m_pengumuman');
+		$this->load->model('m_guru');
 		$this->load->model('m_pengunjung');
 		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
-		$jum=$this->m_pengumuman->pengumuman();
+		$jum=$this->m_guru->guru();
         $page=$this->uri->segment(3);
         if(!$page):
             $offset = 0;
         else:
             $offset = $page;
         endif;
-        $limit=7;
-        $config['base_url'] = base_url() . 'pengumuman/index/';
+        $limit=8;
+        $config['base_url'] = base_url() . 'guru/index/';
             $config['total_rows'] = $jum->num_rows();
             $config['per_page'] = $limit;
             $config['uri_segment'] = 3;
@@ -34,14 +34,15 @@ class Pengumuman extends CI_Controller{
 	          $config['first_tagl_close'] = '</span></li>';
 	          $config['last_tag_open']    = '<li class="page-item"><span class="page-link">';
 	          $config['last_tagl_close']  = '</span></li>';
+
             $config['first_link'] = 'Awal';
             $config['last_link'] = 'Akhir';
             $config['next_link'] = 'Next >>';
             $config['prev_link'] = '<< Prev';
             $this->pagination->initialize($config);
             $x['page'] =$this->pagination->create_links();
-						$x['data']=$this->m_pengumuman->pengumuman_perpage($offset,$limit);
-						$this->load->view('depan/v_pengumuman',$x);
+						$x['data']=$this->m_guru->guru_perpage($offset,$limit);
+						$this->load->view('depan/v_guru',$x);
 	}
 
 }

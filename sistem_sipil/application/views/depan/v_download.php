@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sistem Kerja Praktek Teknik Sipil</title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/'?>">
+    <title>Download/Upload</title>
+    <link rel="shorcut icon" href="<?php echo base_url().'assets/baru/logo.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
     <!-- Google Fonts -->
@@ -15,36 +16,28 @@
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/font-awesome.min.css'?>">
     <!-- Simple Line Font -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/simple-line-icons.css'?>">
-    <!-- Slider / Carousel -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick.css'?>">
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick-theme.css'?>">
+    <!-- Owl Carousel -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/owl.carousel.min.css'?>">
     <!-- Main CSS -->
     <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
-    <?php
-        function limit_words($string, $word_limit){
-            $words = explode(" ",$string);
-            return implode(" ",array_splice($words,0,$word_limit));
-        }
-    ?>
 </head>
 
+
 <body>
-    <!--============================= HEADER =============================-->
-    <div data-toggle="affix">
-        <div class="container nav-menu2">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
-                        <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                            <span class="icon-menu"></span>
-                        </button>
-                        <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'assets/baru/logo.png'?>"></a>
+  <!--============================= HEADER =============================-->
+  
+  <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
+      <div class="container nav-menu2">
+          <div class="row">
+              <div class="col-md-12">
+                  <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
+                      <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                          <span class="icon-menu"></span>
+                      </button>
+                      <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'assets/baru/logo.png'?>"></a>
                       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                            <li class="nav-item">
+                          <ul class="navbar-nav">
+                          <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
                               </li>
                               <li class="nav-item">
@@ -69,73 +62,61 @@
                               <li class="nav-item">
                                 <a class="nav-link" href="<?php echo site_url('contact');?>">Login</a>
                               </li>
-                             </ul>
-                        </div>
-                    </nav>
-                </div>
+                        </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
+          </div>
         </div>
-      </div>
-<section>
-    <div class="slider_img layout_two">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img class="d-block" src="<?php echo base_url().'assets/baru/slider3.jpg'?>" alt="First slide">
-                    <div class="carousel-caption d-md-block">
-                        <div class="slider_title">
-                            <h1>Visi</h1>
-                            <h4>Menjadi Program studi yang unggul
-                                dan mandiri dalma penyelenggaraan
-                                pendidikan, penelitian, dan pengabdian kepada masyrakat
-                                dibidang Teknik Sipil serta menjawab 
-                                kebutuhan bangsa dan negara akan sarjana bidang Rekayasa Sipil diwilayah Pulau Sumatera dan sekitarnya
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'assets/baru/slider_1.jpg'?>" alt="Second slide">
-                    <div class="carousel-caption d-md-block">
-                        <div class="slider_title">
-                            <h1>Misi</h1>
-                            <h4>    1. Menyelenggarakan Pendidikan sarjana dibidang Teknik Sipil melalui proses pembelajaran yang berkualitas tinggi dan efisien.<br>
-                                    2. Menyelenggaran kegiatan penelitian dan pengembangan dibidang Teknik Sipil yang bermanfaat bagi perkembangan ilmu pengetahuan dan peningkatan kesejahteraan masyarakat diwilayah Pulau Sumatera khususnya.<br>
-                                    3. Menyelenggarakan kegiatan pengabdian kepada masyarakat dibidang Teknik Sipil melalui kerja sama dengan institusi lain, baik dengan instansi pemerintah maupun swasta yang dapat memberikan kontribusi bagi tumbuhnya wirausaha berbasis ilmu pengetahuan sains dan teknologi untuk mengembangkan sumber daya ekonomi wilayah dan kesejahteraan.
-                            <div class="slider-btn">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'assets/baru/slider_2.jpg'?>" alt="Third slide">
-                    <div class="carousel-caption d-md-block">
-                        <div class="slider_title">
-                            <h1>Sistem Informasi Teknik Sipil</h1>
-                            <h4>Teknik Sipil itu sendiri merupakan suatu keilmuan yang mencakup teknologi merancang, membangun, memelihara, dan mengelola fasilitas sarana dan prasarana sipil seperti rumah tinggal, gedung bertingkat, jaringan jalan, jembatan, saluran drainase, bandara, pelabuhan, dan lain sebagainya.</h4>
-                            <div class="slider-btn">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                <i class="icon-arrow-left fa-slider" aria-hidden="true"></i>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                <i class="icon-arrow-right fa-slider" aria-hidden="true"></i>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
+    <section>
 </section>
- <!--//END  ABOUT IMAGE -->
+<!--//END HEADER -->
+<section class="contact" style="margin-bottom:50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-title">
+                    <h2>Download</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-striped" id="display">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Files</th>
+                      <th>Tanggal</th>
+                      <th>Oleh</th>
+                      <th style="text-align:right;">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                      $no=1;
+                      foreach ($data->result() as $row):
+                    ?>
+                    <tr>
+                      <td><?php echo $no++;?></td>
+                      <td><?php echo $row->file_judul;?></td>
+                      <td><?php echo $row->tanggal;?></td>
+                      <td><?php echo $row->file_oleh;?></td>
+                      <td style="text-align:right;"><a href="<?php echo site_url('download/get_file/'.$row->file_id);?>" class="btn btn-info">Download</a></td>
+                    </tr>
+                  <?php endforeach;?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--//END  ABOUT IMAGE -->
+
+     <!--//END  ABOUT IMAGE -->
     <!--============================= FOOTER =============================-->
     <footer>
         <div class="container">
@@ -174,11 +155,7 @@
                         <div class="address">
                             <h3>Hubungi Kami</h3>
                             <p><span>Alamat: </span>Jalan Terusan Ryacudu, Way Hui, Jati Agung, Way Huwi, Jati Agung, Kabupaten Lampung Selatan, Lampung 35365</p>
-                            <p> No Telepon : (+62) 721 8030188
-                                No Faksimili : (+62) 721 8030189
-                                Homepage : http://si.itera.ac.id
-                                E-mail : tekniksipil@itera.ac.id
-                                
+                            <p>No Telepon : (+62) 721 8030188 No Faksimili : (+62) 721 8030189 Homepage : http://si.itera.ac.id E-mail : tekniksipil@itera.ac.id 
                                 <ul class="footer-social-icons">
                                     <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>

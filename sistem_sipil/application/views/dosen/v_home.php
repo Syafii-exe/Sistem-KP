@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sistem Kerja Praktek Teknik Sipil</title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/'?>">
+    <link rel="shorcut icon" href="<?php echo base_url().'assets/baru/logo.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
     <!-- Google Fonts -->
@@ -39,7 +39,7 @@
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                             <span class="icon-menu"></span>
                         </button>
-                        <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'assets/baru/logo.png'?>"></a>
+                        
                       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -48,26 +48,23 @@
                                   <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('guru');?>">Dosen Pembimbing</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('siswa');?>">Mahasiswa</a>
+                                  <a class="nav-link" href="<?php echo site_url('dosen/siswa');?>">Mahasiswa</a>
                               </li>
                             
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
+                                  <a class="nav-link" href="<?php echo site_url('dosen/pengumuman');?>">Pengumuman</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
+                                  <a class="nav-link" href="<?php echo site_url('dosen/agenda');?>">Agenda</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('download');?>">Download/Upload</a>
+                                  <a class="nav-link" href="<?php echo site_url('dosen/download');?>">Download/Upload</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('galeri');?>">Dokumentasi</a>
+                                  <a class="nav-link" href="<?php echo site_url('dosen/galeri');?>">Dokumentasi</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="<?php echo site_url('contact');?>">Login</a>
+                                <a class="nav-link" href="<?php echo site_url('dosen/contact');?>">Login</a>
                               </li>
                              </ul>
                         </div>
@@ -162,7 +159,6 @@
                       <div class="sitemap">
                           <h3>Akademik</h3>
                           <ul>
-                              <li><a href="<?php echo site_url('guru');?>">Dosen Pembimbing</a></li>
                               <li><a href="<?php echo site_url('siswa');?>">Mahasiswa </a></li>
                               <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
                               <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
