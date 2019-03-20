@@ -42,31 +42,32 @@
                     
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
-                            <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('guru');?>">Dosen Pembimbing</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('siswa');?>">Mahasiswa</a>
-                              </li>
-                            
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('download');?>">Download/Upload</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('galeri');?>">Dokumentasi</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="<?php echo site_url('contact');?>">Login</a>
-                              </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
+                                </li>
+                               
+                                                               <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('guru');?>">Dosen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('siswa');?>">Mahasiswa</a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('download');?>">Download</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Dokumentasi</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Login</a>
+                                </li>
                              </ul>
                         </div>
                     </nav>
@@ -84,39 +85,37 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block" src="<?php echo base_url().'assets/baru/slider3.jpg'?>" alt="First slide">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/slider.jpg'?>" alt="First slide">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
-                            <h1>Visi</h1>
-                            <h4>Menjadi Program studi yang unggul
-                                dan mandiri dalma penyelenggaraan
-                                pendidikan, penelitian, dan pengabdian kepada masyrakat
-                                dibidang Teknik Sipil serta menjawab 
-                                kebutuhan bangsa dan negara akan sarjana bidang Rekayasa Sipil diwilayah Pulau Sumatera dan sekitarnya
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'assets/baru/slider_1.jpg'?>" alt="Second slide">
-                    <div class="carousel-caption d-md-block">
-                        <div class="slider_title">
-                            <h1>Misi</h1>
-                            <h4>    1. Menyelenggarakan Pendidikan sarjana dibidang Teknik Sipil melalui proses pembelajaran yang berkualitas tinggi dan efisien.<br>
-                                    2. Menyelenggaran kegiatan penelitian dan pengembangan dibidang Teknik Sipil yang bermanfaat bagi perkembangan ilmu pengetahuan dan peningkatan kesejahteraan masyarakat diwilayah Pulau Sumatera khususnya.<br>
-                                    3. Menyelenggarakan kegiatan pengabdian kepada masyarakat dibidang Teknik Sipil melalui kerja sama dengan institusi lain, baik dengan instansi pemerintah maupun swasta yang dapat memberikan kontribusi bagi tumbuhnya wirausaha berbasis ilmu pengetahuan sains dan teknologi untuk mengembangkan sumber daya ekonomi wilayah dan kesejahteraan.
+                            <h1>Bepikir Kreaftif &amp; Inovatif</h1>
+                            <h4>Bagi kami kreativitas merupakan gerbang masa depan.<br> kreativitas akan mendorong inovasi. <br> Itulah yang kami lakukan.</h4>
                             <div class="slider-btn">
+                                <a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'assets/baru/slider_2.jpg'?>" alt="Third slide">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
-                            <h1>Sistem Informasi Teknik Sipil</h1>
-                            <h4>Teknik Sipil itu sendiri merupakan suatu keilmuan yang mencakup teknologi merancang, membangun, memelihara, dan mengelola fasilitas sarana dan prasarana sipil seperti rumah tinggal, gedung bertingkat, jaringan jalan, jembatan, saluran drainase, bandara, pelabuhan, dan lain sebagainya.</h4>
+                            <h1>Guru Bekualitas Tinggi</h1>
+                            <h4>Guru merupakan faktor penting dalam proses belajar-mengajar.<br> Itulah kenapa kami mendatangkan guru-guru <br>terbaik dari berbagai penjuru.</h4>
                             <div class="slider-btn">
-                               
+                                <a href="<?php echo site_url('guru');?>" class="btn btn-default"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide">
+                    <div class="carousel-caption d-md-block">
+                        <div class="slider_title">
+                            <h1>Proses Belajar Interatif</h1>
+                            <h4>Kami membuat proses belajar mengajar menjadi lebih interatif.<br> dengan demikian siswa lebih menyukai <br>proses belajar.</h4>
+                            <div class="slider-btn">
+                                <a href="<?php echo site_url('galeri');?>" class="btn btn-default"> </a>
                             </div>
                         </div>
                     </div>
@@ -133,73 +132,141 @@
         </div>
     </div>
 </section>
- <!--//END  ABOUT IMAGE -->
-    <!--============================= FOOTER =============================-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="foot-logo">
-                        <a href="<?php echo site_url();?>">
-                            <img src="<?php echo base_url().'assets/baru/logo.png'?>" class="img-fluid" alt="footer_logo">
-                        </a>
-                        <p><?php echo date('Y');?> © copyright by Teknik Sipil Institut Teknologi Sumatera</a>. <br>All rights reserved.</p>
-                        </div>
+<!--//END HEADER -->
+<!--============================= ABOUT =============================-->
+<section class="clearfix about about-style2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+               <p>
+
+
+                </p>
+
+            </div>
+            <div class="col-md-4">
+         
+            </div>
+        </div>
+    </div>
+</section>
+<!--//END ABOUT -->
+<!--============================= OUR COURSES =============================-->
+
+<!--//END OUR COURSES -->
+<!--============================= EVENTS =============================-->
+
+<!--//END EVENTS -->
+<!--============================= DETAILED CHART =============================-->
+<div class="detailed_chart">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_1.png'?>" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_guru;?></span> Guru
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom chart_top">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_2.png'?>" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_siswa;?></span> Siswa
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_top">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_3.png'?>" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_files;?></span> Download
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_4.png'?>" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_agenda;?></span> Agenda</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//END DETAILED CHART -->
+<!--============================= FOOTER =============================-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="foot-logo">
+                 
+                    
                     </div>
-                    <div class="col-md-3">
-                        <div class="sitemap">
-                            <h3>Menu Utama</h3>
-                            <ul>
-                                <li><a href="<?php echo site_url();?>">Home</a></li>
-                            <li><a href="<?php echo site_url('galeri');?>">Dokumentasi</a></li>
-                            
+                </div>
+                <div class="col-md-3">
+                    <div class="sitemap">
+                        <h3>Menu Utama</h3>
+                        <ul>
+                            <li><a href="<?php echo site_url();?>">Home</a></li>
+                            <li><a href="<?php echo site_url('about');?>">About</a></li>
+                            <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
+                            <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
+                            <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="sitemap">
+                      <h3>Akademik</h3>
+                      <ul>
+                          <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
+                          <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
+                          <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
+                          <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
+                          <li><a href="<?php echo site_url('download');?>">Download</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <h3>Hubungi Kami</h3>
+                        <p><span>Alamat: </span> </p>
+                        <p>Email :  
+                            <br> Phone :  </p>
+                            <ul class="footer-social-icons">
+                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                      <div class="sitemap">
-                          <h3>Akademik</h3>
-                          <ul>
-                              <li><a href="<?php echo site_url('guru');?>">Dosen Pembimbing</a></li>
-                              <li><a href="<?php echo site_url('siswa');?>">Mahasiswa </a></li>
-                              <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                              <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                              <li><a href="<?php echo site_url('download');?>">Download/Upload</a></li>
-                          </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="address">
-                            <h3>Hubungi Kami</h3>
-                            <p><span>Alamat: </span>Jalan Terusan Ryacudu, Way Hui, Jati Agung, Way Huwi, Jati Agung, Kabupaten Lampung Selatan, Lampung 35365</p>
-                            <p> No Telepon : (+62) 721 8030188
-                                No Faksimili : (+62) 721 8030189
-                                Homepage : http://si.itera.ac.id
-                                E-mail : tekniksipil@itera.ac.id
-                                
-                                <ul class="footer-social-icons">
-                                    <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </footer>
-            <!--//END FOOTER -->
-            <!-- jQuery, Bootstrap JS. -->
-            <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
-            <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
-            <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
-            <script src="<?php echo base_url().'theme/js/owl.carousel.min.js'?>"></script>
-            <script src="<?php echo base_url().'theme/js/validate.js'?>"></script>
-            <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
-            <!-- Subscribe / Contact-->
-            <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
-            <script src="<?php echo base_url().'theme/js/contact.js'?>"></script>
-            <!-- Script JS -->
-            <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
-        </body>
+            </div>
+        </footer>
+        <!--//END FOOTER -->
+        <!-- jQuery, Bootstrap JS. -->
+        <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
+        <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
+        <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
+        <!-- Plugins -->
+        <script src="<?php echo base_url().'theme/js/slick.min.js'?>"></script>
+        <script src="<?php echo base_url().'theme/js/waypoints.min.js'?>"></script>
+        <script src="<?php echo base_url().'theme/js/counterup.min.js'?>"></script>
+        <script src="<?php echo base_url().'theme/js/owl.carousel.min.js'?>"></script>
+        <script src="<?php echo base_url().'theme/js/validate.js'?>"></script>
+        <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
+        <!-- Subscribe -->
+        <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
+        <!-- Script JS -->
+        <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
+    </body>
 
-        </html>
+    </html>
