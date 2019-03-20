@@ -1,21 +1,21 @@
 <?php
-class Pengumuman extends CI_Controller{
+class Siswa extends CI_Controller{
 	function __construct(){
 		parent::__construct();
-		$this->load->model('m_pengumuman');
+		$this->load->model('m_siswa');
 		$this->load->model('m_pengunjung');
 		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
-		$jum=$this->m_pengumuman->pengumuman();
+		$jum=$this->m_siswa->siswa();
         $page=$this->uri->segment(3);
         if(!$page):
             $offset = 0;
         else:
             $offset = $page;
         endif;
-        $limit=7;
-        $config['base_url'] = base_url() . 'pengumuman/index/';
+        $limit=8;
+        $config['base_url'] = base_url() . 'dosen/siswa/index/';
             $config['total_rows'] = $jum->num_rows();
             $config['per_page'] = $limit;
             $config['uri_segment'] = 3;
@@ -40,8 +40,10 @@ class Pengumuman extends CI_Controller{
             $config['prev_link'] = '<< Prev';
             $this->pagination->initialize($config);
             $x['page'] =$this->pagination->create_links();
-						$x['data']=$this->m_pengumuman->pengumuman_perpage($offset,$limit);
-						$this->load->view('depan/v_pengumuman',$x);
+						$x['data']=$this->m_siswa->siswa_perpage($offset,$limit);
+						$this->load->view('dosen/v_siswa',$x);
 	}
+
+
 
 }

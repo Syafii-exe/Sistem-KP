@@ -15,7 +15,7 @@ class Pengumuman extends CI_Controller{
             $offset = $page;
         endif;
         $limit=7;
-        $config['base_url'] = base_url() . 'pengumuman/index/';
+        $config['base_url'] = base_url() . 'dosen/pengumuman/index/';
             $config['total_rows'] = $jum->num_rows();
             $config['per_page'] = $limit;
             $config['uri_segment'] = 3;
@@ -41,7 +41,7 @@ class Pengumuman extends CI_Controller{
             $this->pagination->initialize($config);
             $x['page'] =$this->pagination->create_links();
 						$x['data']=$this->m_pengumuman->pengumuman_perpage($offset,$limit);
-						$this->load->view('depan/v_pengumuman',$x);
+						$this->load->view('dosen/v_pengumuman',$x);
 	}
 
 }
